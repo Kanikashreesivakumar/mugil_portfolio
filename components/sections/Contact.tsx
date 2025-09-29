@@ -133,7 +133,7 @@ export const Contact = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
               >
-                Thank you for your message! We'll get back to you within 24 hours.
+                Thank you for your message! We&apos;ll get back to you within 24 hours.
               </motion.div>
             )}
 

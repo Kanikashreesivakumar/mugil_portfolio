@@ -82,7 +82,7 @@ export const About = () => {
             </div>
             
             <h2 className="text-4xl lg:text-6xl font-display font-black text-[#739EC9] mb-8 leading-tight">
-              I'm <span className="bg-gradient-to-r from-[#739EC9] to-[#739EC9] bg-clip-text text-transparent">Dr. Mugil Vanan</span>
+              I&apos;m <span className="bg-gradient-to-r from-[#739EC9] to-[#739EC9] bg-clip-text text-transparent">Dr. Mugil Vanan</span>
             </h2>
             
             <div className="space-y-8 text-lg text-[#3A4A5A] leading-relaxed">

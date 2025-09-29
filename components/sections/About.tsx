@@ -140,6 +140,10 @@ export const About = () => {
                 data-cursor-hover
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  const contact = document.getElementById('contact');
+                  if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 Contact me
               </motion.button>

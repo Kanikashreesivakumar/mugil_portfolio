@@ -6,18 +6,22 @@ import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp } from 'reac
 
 const footerLinks = {
   services: [
-    'Manual Therapy',
-    'Sports Rehabilitation',
-    'Posture Correction',
-    'Pain Management',
-    'Wellness Coaching',
+    'Knee pain Rehabilitation', 
+'Shoulder pain Rehabilitation',
+'Back pain Rehabilitation',
+'Ankle pain Rehabilitation',
+'Stroke Rehabilitation',
+'Bell’s palsy Rehabilitation',
+'Parkinson’s Rehabilitation',
+'Post Operative Stiffness Rehabilitation',
+'Sports surgery Rehabilitation',
+
   ],
   quickLinks: [
-    'About Dr. Mugil',
-    'Services',
-    'Testimonials',
-    'Contact',
-    'Book Appointment',
+    { label: 'About Dr. Mugil', href: '#about' },
+    { label: 'Services', href: '#skills' },
+    { label: 'Testimonials', href: '#testimonials' },
+    { label: 'Contact', href: '#contact' },
   ],
   resources: [
     'Health Tips Blog',
@@ -116,11 +120,11 @@ export const Footer = () => {
               {footerLinks.quickLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                    href={link.href}
                     className="text-neutral-400 hover:text-primary-400 transition-colors duration-300 text-sm cursor-pointer"
                     data-cursor-hover
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}

@@ -49,9 +49,9 @@ export const About = () => {
               <Image
                 src="/images/mu.jpg"
                 alt="Dr. mugil vanan - Professional Physiotherapist"
-                width={300}
-                height={350}
-                className="rounded-2xl shadow-2xl w-40 h-48 sm:w-[300px] sm:h-[350px] object-cover mx-auto"
+                width={400}
+                height={500}
+                className="rounded-2xl shadow-2xl w-60 h-72 sm:w-[400px] sm:h-[500px] object-cover mx-auto"
                 priority
               />
             </div>

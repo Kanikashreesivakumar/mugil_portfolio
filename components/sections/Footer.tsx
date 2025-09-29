@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { HiHeart, HiPhone, HiMail, HiLocationMarker } from 'react-icons/hi'
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import Image from 'next/image'
 
 const footerLinks = {
   services: [
@@ -56,8 +57,8 @@ export const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-500 to-accent-violet-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-lg">SJ</span>
+              <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                <Image src="/images/logo.jpg" alt="Logo" width={56} height={56} className="object-contain w-full h-full" />
               </div>
               <span className="text-lg sm:text-xl font-display font-semibold">
                 Dr. mugil vanan

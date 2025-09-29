@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Dr. MUGIL PHYSIO',
   description: 'Expert physiotherapy services helping you move pain-free. Specializing in manual therapy, sports rehabilitation, posture correction, and pain management.',
+   icons: {
+    icon: 'images/logo.jpg', 
+  },
   keywords: 'physiotherapy, wellness coach, manual therapy, sports rehab, pain management, posture correction',
   authors: [{ name: 'Dr. mugil vanan' }],
   creator: 'Dr. mugil vanan',
@@ -20,10 +23,10 @@ export const metadata: Metadata = {
     siteName: 'Dr. mugil vanan Physiotherapy',
     images: [
       {
-        url: '/images/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Dr. mugil vanan Physiotherapy',
+        url: '/images/logo.jpg',
+        width: 400,
+        height: 400,
+        alt: 'Dr. mugil vanan Logo',
       },
     ],
   },
@@ -32,7 +35,7 @@ export const metadata: Metadata = {
     title: 'Dr. MUGIL VANAN | Physiotherapist & Wellness Coach',
     description: 'Expert physiotherapy services helping you move pain-free.',
     creator: 'k4niz',
-    images: ['/images/og-image.jpg'],
+    images: ['/images/logo.jpg'],
   },
   robots: {
     index: true,

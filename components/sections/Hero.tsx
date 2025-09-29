@@ -22,9 +22,9 @@ import { HiArrowDown, HiPlay, HiLightningBolt, HiStar } from 'react-icons/hi'
 import { FiActivity, FiTarget, FiTrendingUp } from 'react-icons/fi'
 
 const heroStats = [
-  { icon: FiActivity, value: '150+', label: 'Patients Healed', color: 'text-primary-600' },
+  { icon: FiActivity, value: '3000+', label: 'Patients Healed', color: 'text-primary-600' },
   { icon: FiTarget, value: '98%', label: 'Success Rate', color: 'text-accent-pink-600' },
-  { icon: FiTrendingUp, value: '5+', label: 'Years Experience', color: 'text-accent-violet-600' },
+  { icon: FiTrendingUp, value: '4+', label: 'Years Experience', color: 'text-accent-violet-600' },
 ]
 
 export const Hero = () => {
@@ -79,22 +79,24 @@ export const Hero = () => {
         {/* ...existing code for status badge, heading, subtitle, tagline, CTA buttons, stats grid... */}
   <motion.div className="inline-flex items-center bg-gradient-to-r from-primary-50 to-accent-violet-50 border border-primary-200/60 rounded-xl sm:rounded-2xl px-3 sm:px-6 py-1.5 sm:py-3 mb-3 sm:mb-10 shadow-2xl backdrop-blur-sm" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
    <HiLightningBolt className="w-4 h-4 sm:w-10 sm:h-10 text-primary-600 mr-2 sm:mr-5" />
-   <span className="text-[10px] sm:text-lg md:text-xl font-bold text-neutral-800 tracking-wide uppercase">Expert Physiotherapy • Now Accepting Patients</span>
+   <span className="text-[10px] sm:text-lg md:text-xl font-bold text-neutral-800 tracking-wide uppercase">Rehab. Recover. Renew</span>
    <div className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 bg-green-500 rounded-full ml-1 sm:ml-3 animate-pulse" />
   </motion.div>
   <motion.h1 className="text-2xl xs:text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-black text-neutral-900 mb-2 sm:mb-6 leading-[1.1] sm:leading-[0.85] tracking-tight" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}>
           <span className="block relative">
-            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">DR.Mugil vanan</span>
+            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">Dr.Mugil vanan PT,MBA,</span>
       <motion.div className="absolute -top-1 -right-2 w-3 h-3 sm:w-6 sm:h-6 bg-accent-pink-500 rounded-full" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} />
           </span>
         </motion.h1>
         <motion.div className="flex items-center justify-center mb-2 sm:mb-6" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
           <div className="w-3 h-0.5 sm:w-12 bg-primary-500 mr-1 sm:mr-4" />
-          <h2 className="text-xs xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-700 tracking-wider uppercase">Physiotherapist & Wellness Coach</h2>
+          <h2 className="text-xs xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-700 tracking-wider uppercase">Physical Therapist | Rehabilitation Specialist 
+
+</h2>
           <div className="w-3 h-0.5 sm:w-12 bg-accent-pink-500 ml-1 sm:ml-4" />
         </motion.div>
   <motion.p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-3xl text-neutral-600 mb-3 sm:mb-12 max-w-4xl mx-auto leading-tight font-medium" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.7 }}>
-          Transforming lives through <span className="text-primary-600 font-bold"> evidence-based physiotherapy</span> and <span className="font-bold" style={{color: '#739EC9'}}> personalized wellness solutions</span>
+          Transforming lives through <span className="text-primary-600 font-bold"> evidence-based physiotherapy</span> and <span className="font-bold" style={{color: '#739EC9'}}> personalized recovery solutions</span>
         </motion.p>
   <motion.div className="flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center items-center mb-4 sm:mb-16" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9 }}>
           <motion.button

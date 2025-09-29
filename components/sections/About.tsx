@@ -12,7 +12,7 @@ const stats = [
   },
   {
     icon: HiClock,
-    value: '5+',
+    value: '4+',
     label: 'Years Experience',
   },
   {
@@ -22,7 +22,7 @@ const stats = [
   },
   {
     icon: HiAcademicCap,
-    value: '3',
+    value: '5',
     label: 'Certifications',
   },
 ]
@@ -90,11 +90,12 @@ export const About = () => {
                 <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-[#739EC9] to-[#739EC9] rounded-full" />
                 <p className="font-bold text-base sm:text-xl text-[#739EC9] mb-2 sm:mb-4">
                   
-                  Physiotherapist with strong 5+ years of experience across sports, orthopedic, and neurological rehabilitation.
+                  Physiotherapist with strong 4+ years of experience across sports, orthopedic, and neurological rehabilitation.
                 </p>
               </div>
               <p className="text-sm sm:text-lg font-medium">
-                Over the years, I have worked with diverse patient groups — from stroke and neuro recovery to sports injuries, musculoskeletal conditions, and pediatric rehabilitation. I believe in evidence-based, patient-centered therapy that enhances function, independence, and overall quality of life.
+               
+                Over the years, I have worked with diverse patient groups — from stroke and neuro recovery to sports injuries, musculoskeletal conditions, and pediatric rehabilitation. Currently im practising as a consulting Physical and Rehabilitation Therapist in Arawinth Hospitals-Multispeciality Centre in erode, I believe in evidence-based, patient-centered therapy that enhances function, independence, and overall quality of life.
               </p>
               <p className="text-sm sm:text-lg">
                 I have also completed my MBA in Hospital Management to combine my clinical background with healthcare leadership and management expertise.

@@ -136,7 +136,7 @@ export const Header = () => {
             }}
             transition={{ delay: isMenuOpen ? 0.3 : 0 }}
           >
-            Book Appointment
+            
           </motion.button>
         </div>
         </motion.div>

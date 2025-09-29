@@ -82,18 +82,18 @@ export const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-24 lg:py-32 gradient-bg">
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-12 sm:py-24 lg:py-32 gradient-bg">
+      <div className="container mx-auto px-3 sm:px-6">
         {/* Section Header */}
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <motion.h2
-            className="text-4xl lg:text-5xl font-display font-semibold text-neutral-900 mb-6"
+            className="text-2xl sm:text-4xl lg:text-5xl font-display font-semibold text-neutral-900 mb-3 sm:mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -103,7 +103,7 @@ export const Contact = () => {
           </motion.h2>
           
           <motion.p
-            className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-sm sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -114,16 +114,16 @@ export const Contact = () => {
           </motion.p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-16">
           {/* Contact Form */}
           <motion.div
-            className="bg-white rounded-3xl p-8 shadow-2xl"
+            className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-2xl"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-semibold text-neutral-900 mb-6">
+            <h3 className="text-lg sm:text-2xl font-semibold text-neutral-900 mb-3 sm:mb-6">
               Send us a message
             </h3>
 
@@ -137,26 +137,26 @@ export const Contact = () => {
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
               {/* Name Field */}
               <div>
-                <label className="block text-neutral-700 font-medium mb-2">
+                <label className="block text-neutral-700 font-medium mb-1 sm:mb-2 text-xs sm:text-base">
                   Full Name *
                 </label>
                 <input
                   type="text"
                   {...register('name', { required: 'Name is required' })}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-xs sm:text-base"
                   placeholder="Your full name"
                 />
                 {errors.name && (
-                  <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                  <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.name.message}</p>
                 )}
               </div>
 
               {/* Email Field */}
               <div>
-                <label className="block text-neutral-700 font-medium mb-2">
+                <label className="block text-neutral-700 font-medium mb-1 sm:mb-2 text-xs sm:text-base">
                   Email Address *
                 </label>
                 <input
@@ -168,40 +168,40 @@ export const Contact = () => {
                       message: 'Invalid email address',
                     },
                   })}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-xs sm:text-base"
                   placeholder="your@email.com"
                 />
                 {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                  <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.email.message}</p>
                 )}
               </div>
 
               {/* Phone Field */}
               <div>
-                <label className="block text-neutral-700 font-medium mb-2">
+                <label className="block text-neutral-700 font-medium mb-1 sm:mb-2 text-xs sm:text-base">
                   Phone Number
                 </label>
                 <input
                   type="tel"
                   {...register('phone')}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 text-xs sm:text-base"
                   placeholder="6383791589"
                 />
               </div>
 
               {/* Message Field */}
               <div>
-                <label className="block text-neutral-700 font-medium mb-2">
+                <label className="block text-neutral-700 font-medium mb-1 sm:mb-2 text-xs sm:text-base">
                   Message *
                 </label>
                 <textarea
                   {...register('message', { required: 'Message is required' })}
                   rows={4}
-                  className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 resize-none"
+                  className="w-full px-3 py-2 sm:px-4 sm:py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-300 resize-none text-xs sm:text-base"
                   placeholder="Tell us about your concern or question..."
                 />
                 {errors.message && (
-                  <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                  <p className="text-red-500 text-xs sm:text-sm mt-1">{errors.message.message}</p>
                 )}
               </div>
 
@@ -209,7 +209,7 @@ export const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className={`w-full py-4 rounded-lg font-medium text-lg transition-all duration-300 ${
+                className={`w-full py-2 sm:py-4 rounded-lg font-medium text-base sm:text-lg transition-all duration-300 ${
                   isSubmitting
                     ? 'bg-neutral-400 cursor-not-allowed'
                     : 'bg-primary-600 hover:bg-primary-700 hover:shadow-xl hover:shadow-primary-200'
@@ -242,12 +242,12 @@ export const Contact = () => {
             viewport={{ once: true }}
           >
             {/* Contact Information */}
-            <div className="mb-8">
-              <h3 className="text-2xl font-semibold text-neutral-900 mb-6">
+            <div className="mb-4 sm:mb-8">
+              <h3 className="text-lg sm:text-2xl font-semibold text-neutral-900 mb-3 sm:mb-6">
                 Contact Information
               </h3>
               
-              <div className="space-y-4">
+              <div className="space-y-2 sm:space-y-4">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={index}
@@ -257,23 +257,23 @@ export const Contact = () => {
                     transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                     viewport={{ once: true }}
                   >
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4 group-hover:bg-primary-200 transition-colors duration-300">
-                      <info.icon className="w-6 h-6 text-primary-600" />
+                    <div className="w-7 h-7 sm:w-12 sm:h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-2 sm:mr-4 group-hover:bg-primary-200 transition-colors duration-300">
+                      <info.icon className="w-4 h-4 sm:w-6 sm:h-6 text-primary-600" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-medium text-neutral-800">
+                      <h4 className="text-xs sm:text-lg font-medium text-neutral-800">
                         {info.title}
                       </h4>
                       {info.link ? (
                         <a
                           href={info.link}
-                          className="text-neutral-600 hover:text-primary-600 transition-colors duration-300"
+                          className="text-neutral-600 hover:text-primary-600 transition-colors duration-300 text-xs sm:text-base"
                           data-cursor-hover
                         >
                           {info.details}
                         </a>
                       ) : (
-                        <p className="text-neutral-600">{info.details}</p>
+                        <p className="text-neutral-600 text-xs sm:text-base">{info.details}</p>
                       )}
                     </div>
                   </motion.div>
@@ -289,22 +289,22 @@ export const Contact = () => {
               transition={{ duration: 0.6, delay: 0.7 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-semibold text-neutral-900 mb-4">
+              <h3 className="text-base sm:text-xl font-semibold text-neutral-900 mb-2 sm:mb-4">
                 Follow Us
               </h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-2 sm:space-x-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-12 h-12 bg-white rounded-lg shadow-lg flex items-center justify-center text-neutral-600 ${social.color} transition-all duration-300 hover:shadow-xl hover:scale-110`}
+                    className={`w-7 h-7 sm:w-12 sm:h-12 bg-white rounded-lg shadow-lg flex items-center justify-center text-neutral-600 ${social.color} transition-all duration-300 hover:shadow-xl hover:scale-110`}
                     data-cursor-hover
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <social.icon className="w-6 h-6" />
+                    <social.icon className="w-4 h-4 sm:w-6 sm:h-6" />
                   </motion.a>
                 ))}
               </div>

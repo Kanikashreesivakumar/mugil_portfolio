@@ -88,26 +88,26 @@ export const SkillsShowcase = () => {
   ];
 
   return (
-    <section id="skills" className="relative py-24 lg:py-32 bg-gradient-to-br from-[#F7FAFC] via-[#EAF2FB] to-[#FFE8DB] overflow-hidden">
+    <section id="skills" className="relative py-12 sm:py-24 lg:py-32 bg-gradient-to-br from-[#F7FAFC] via-[#EAF2FB] to-[#FFE8DB] overflow-hidden">
       {/* Decorative Blobs */}
       <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#739EC9]/20 rounded-full blur-3xl z-0" />
       <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-[#FFE8DB]/30 rounded-full blur-3xl z-0" />
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-3 sm:px-6 relative z-10">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl lg:text-5xl font-display font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#739EC9] to-[#FFE8DB] mb-6">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-display font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#739EC9] to-[#FFE8DB] mb-3 sm:mb-6">
             Core Skills
           </h2>
-          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             A blend of clinical, professional, and management skills for holistic patient care and healthcare leadership.
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-12">
           {cards.map((card, idx) => (
             <motion.div
               key={card.title}
@@ -116,17 +116,17 @@ export const SkillsShowcase = () => {
               transition={{ duration: 0.6, delay: 0.1 * (idx + 1) }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.04, boxShadow: '0 8px 32px 0 rgba(115,158,201,0.15)' }}
-              className={`relative bg-white rounded-3xl shadow-xl p-10 group transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-2 border-transparent hover:border-[#739EC9]/30`}
+              className={`relative bg-white rounded-xl sm:rounded-3xl shadow-xl p-4 sm:p-10 group transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 border-2 border-transparent hover:border-[#739EC9]/30`}
             >
-              <div className={`w-16 h-16 flex items-center justify-center rounded-full mb-6 bg-gradient-to-br ${card.gradient} group-hover:scale-110 transition-transform duration-300`}>
-                <card.icon className="w-8 h-8 text-white drop-shadow-lg" />
+              <div className={`w-8 h-8 sm:w-16 sm:h-16 flex items-center justify-center rounded-full mb-2 sm:mb-6 bg-gradient-to-br ${card.gradient} group-hover:scale-110 transition-transform duration-300`}>
+                <card.icon className="w-4 h-4 sm:w-8 sm:h-8 text-white drop-shadow-lg" />
               </div>
-              <h3 className="text-2xl font-bold text-[#739EC9] mb-4 tracking-wide group-hover:text-[#5682B1] transition-colors duration-300">{card.title}</h3>
-              <ul className="space-y-3">
+              <h3 className="text-xs sm:text-2xl font-bold text-[#739EC9] mb-1 sm:mb-4 tracking-wide group-hover:text-[#5682B1] transition-colors duration-300">{card.title}</h3>
+              <ul className="space-y-1 sm:space-y-3">
                 {card.skills.map((skill, i) => (
                   <motion.li
                     key={i}
-                    className="text-neutral-700 text-base px-3 py-2 rounded-lg bg-[#F7FAFC] group-hover:bg-[#EAF2FB] transition-colors duration-300 shadow-sm"
+                    className="text-neutral-700 text-xs sm:text-base px-2 sm:px-3 py-1 sm:py-2 rounded-lg bg-[#F7FAFC] group-hover:bg-[#EAF2FB] transition-colors duration-300 shadow-sm"
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.4, delay: 0.2 + i * 0.05 }}

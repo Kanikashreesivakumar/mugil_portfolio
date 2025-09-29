@@ -26,17 +26,17 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 lg:py-32 bg-white">
-      <div className="container mx-auto px-6">
+    <section id="testimonials" className="py-12 sm:py-24 lg:py-32 bg-white">
+      <div className="container mx-auto px-3 sm:px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8 sm:mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           <motion.h2
-            className="text-4xl lg:text-5xl font-display font-semibold text-neutral-900 mb-6"
+            className="text-2xl sm:text-4xl lg:text-5xl font-display font-semibold text-neutral-900 mb-3 sm:mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -45,7 +45,7 @@ export const Testimonials = () => {
             Patient <span className="font-bold" style={{ color: '#739EC9' }}>Gallery</span>
           </motion.h2>
           <motion.p
-            className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xs sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
@@ -56,18 +56,18 @@ export const Testimonials = () => {
         </motion.div>
 
         {/* Testimonials List: No Photos */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto">
           {testimonials.map((item) => (
             <motion.div
               key={item.id}
-              className="flex flex-col items-center rounded-2xl overflow-hidden shadow-lg bg-white p-6"
+              className="flex flex-col items-center rounded-xl sm:rounded-2xl overflow-hidden shadow-lg bg-white p-3 sm:p-6"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <p className="text-base text-neutral-700 text-center mb-4">{item.testimonial}</p>
-              <span className="text-lg font-semibold text-[#739EC9] text-center">{item.name}</span>
+              <p className="text-xs sm:text-base text-neutral-700 text-center mb-2 sm:mb-4">{item.testimonial}</p>
+              <span className="text-xs sm:text-lg font-semibold text-[#739EC9] text-center">{item.name}</span>
             </motion.div>
           ))}
         </div>

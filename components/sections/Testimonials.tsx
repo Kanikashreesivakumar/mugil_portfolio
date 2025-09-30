@@ -42,16 +42,16 @@ export const Testimonials = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Patient <span className="font-bold" style={{ color: '#739EC9' }}>Gallery</span>
+            Patient <span className="font-bold" style={{ color: '#739EC9' }}>Testimonials</span>
           </motion.h2>
           <motion.p
-            className="text-xs sm:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-sm sm:text-2xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Real patient journeys and treatment moments. Click any photo to view larger.
+            Inspiring recovery stories from real patients—discover how expert care transforms lives. 
           </motion.p>
         </motion.div>
 

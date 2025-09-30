@@ -78,29 +78,27 @@ export const Hero = () => {
   <motion.div className="container mx-auto px-3 sm:px-6 text-center z-10 relative" style={{ y: contentY }} initial={{ opacity: 0, y: 60 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }}>
         {/* ...existing code for status badge, heading, subtitle, tagline, CTA buttons, stats grid... */}
   <motion.div className="inline-flex items-center bg-gradient-to-r from-primary-50 to-accent-violet-50 border border-primary-200/60 rounded-xl sm:rounded-2xl px-3 sm:px-6 py-1.5 sm:py-3 mb-3 sm:mb-10 shadow-2xl backdrop-blur-sm" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}>
-   <HiLightningBolt className="w-4 h-4 sm:w-10 sm:h-10 text-primary-600 mr-2 sm:mr-5" />
-   <span className="text-[10px] sm:text-lg md:text-xl font-bold text-neutral-800 tracking-wide uppercase">Rehab. Recover. Renew</span>
-   <div className="w-1.5 h-1.5 sm:w-2.5 sm:h-2.5 bg-green-500 rounded-full ml-1 sm:ml-3 animate-pulse" />
+  <HiLightningBolt className="w-5 h-5 sm:w-12 sm:h-12 text-primary-600 mr-2 sm:mr-6" />
+  <span className="text-xs sm:text-xl md:text-2xl font-bold text-neutral-800 tracking-wide uppercase">Rehab. Recover. Renew</span>
+  <div className="w-2 h-2 sm:w-3 h-3 bg-green-500 rounded-full ml-1 sm:ml-4 animate-pulse" />
   </motion.div>
   <motion.h1 className="text-2xl xs:text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-black text-neutral-900 mb-2 sm:mb-6 leading-[1.1] sm:leading-[0.85] tracking-tight" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}>
           <span className="block relative">
-            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">Dr.Mugil vanan</span><span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black  lg:text-7xl"> ,PT,MBA</span>
-      <motion.div className="absolute -top-1 -right-2 w-3 h-3 sm:w-6 sm:h-6 bg-accent-pink-500 rounded-full" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} />
+            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">Dr.Mugil vanan</span><span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black  lg:text-6xl"> ,PT,MBA</span>
+      <motion.div className="absolute -top-1 -right-2 w-4 h-4 sm:w-7 sm:h-7 bg-accent-pink-500 rounded-full" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} />
           </span>
         </motion.h1>
         <motion.div className="flex items-center justify-center mb-2 sm:mb-6" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.5 }}>
-          <div className="w-3 h-0.5 sm:w-12 bg-primary-500 mr-1 sm:mr-4" />
-          <h2 className="text-xs xs:text-sm sm:text-2xl md:text-3xl lg:text-4xl font-bold text-neutral-700 tracking-wider uppercase">Physical Therapist | Rehabilitation Specialist 
-
-</h2>
-          <div className="w-3 h-0.5 sm:w-12 bg-accent-pink-500 ml-1 sm:ml-4" />
+          <div className="w-4 h-1 sm:w-14 bg-primary-500 mr-2 sm:mr-5" />
+          <h2 className="text-sm xs:text-base sm:text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-700 tracking-wider uppercase">Physical Therapist | Rehabilitation Specialist </h2>
+          <div className="w-4 h-1 sm:w-14 bg-accent-pink-500 ml-2 sm:ml-5" />
         </motion.div>
   <motion.p className="text-xs xs:text-sm sm:text-xl md:text-2xl lg:text-3xl text-neutral-600 mb-3 sm:mb-12 max-w-4xl mx-auto leading-tight font-medium" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.7 }}>
-          Transforming lives through <span className="text-primary-600 font-bold"> evidence-based physiotherapy</span> and <span className="font-bold" style={{color: '#739EC9'}}> personalized recovery solutions</span>
+          Transforming lives through <span className="text-primary-600 font-bold text-sm sm:text-2xl"> evidence-based physiotherapy</span> and <span className="font-bold text-sm sm:text-2xl" style={{color: '#739EC9'}}> personalized recovery solutions</span>
         </motion.p>
   <motion.div className="flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center items-center mb-4 sm:mb-16" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.9 }}>
           <motion.button
-            className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-4 sm:px-10 py-2 sm:py-5 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-lg shadow-2xl shadow-primary-300/50 hover:shadow-3xl hover:shadow-primary-400/60 transition-all duration-300 relative overflow-hidden"
+            className="group bg-gradient-to-r from-primary-600 to-primary-700 text-white px-5 sm:px-12 py-3 sm:py-6 rounded-2xl sm:rounded-3xl font-bold text-sm sm:text-xl shadow-2xl shadow-primary-300/50 hover:shadow-3xl hover:shadow-primary-400/60 transition-all duration-300 relative overflow-hidden"
             data-cursor-hover
             whileHover={{ scale: 1.05, y: -3 }}
             whileTap={{ scale: 0.98 }}
@@ -109,26 +107,26 @@ export const Hero = () => {
               if (contact) contact.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            <span className="relative z-10 flex items-center"><HiStar className="w-3 h-3 sm:w-5 sm:h-5 mr-1 sm:mr-2" />Link with me</span>
+            <span className="relative z-10 flex items-center"><HiStar className="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3" />Link with me</span>
             <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           </motion.button>
           <motion.button
-            className="group flex items-center text-neutral-700 hover:text-primary-600 font-bold text-xs sm:text-lg transition-colors duration-300"
+            className="group flex items-center text-neutral-700 hover:text-primary-600 font-bold text-sm sm:text-xl transition-colors duration-300"
             data-cursor-hover
             whileHover={{ x: 5 }}
             onClick={() => setVideoOpen(true)}
           >
-            <div className="w-7 h-7 sm:w-14 sm:h-14 bg-white border-2 border-neutral-300 group-hover:border-primary-500 rounded-xl sm:rounded-2xl flex items-center justify-center mr-1 sm:mr-4 shadow-lg group-hover:shadow-xl transition-all duration-300"><HiPlay className="w-3 h-3 sm:w-6 sm:h-6 text-primary-600 ml-1" /></div>
-            <span className="text-[10px] sm:text-base">Watch Success Stories</span>
+            <div className="w-8 h-8 sm:w-16 sm:h-16 bg-white border-2 border-neutral-300 group-hover:border-primary-500 rounded-2xl sm:rounded-3xl flex items-center justify-center mr-2 sm:mr-5 shadow-lg group-hover:shadow-xl transition-all duration-300"><HiPlay className="w-4 h-4 sm:w-7 sm:h-7 text-primary-600 ml-1" /></div>
+            <span className="text-xs sm:text-lg">Watch Success Stories</span>
           </motion.button>
           <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />
         </motion.div>
   <motion.div className="grid grid-cols-3 gap-1 sm:gap-8 max-w-3xl mx-auto" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.1 }}>
           {heroStats.map((stat, index) => (
             <motion.div key={index} className="text-center group cursor-pointer" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }} whileHover={{ y: -5 }}>
-              <div className="inline-flex items-center justify-center w-6 h-6 sm:w-20 sm:h-20 bg-white border-2 border-neutral-200 group-hover:border-primary-300 rounded-xl sm:rounded-3xl mb-1 sm:mb-4 group-hover:scale-110 transition-all duration-300 shadow-xl group-hover:shadow-2xl"><stat.icon className={`w-3 h-3 sm:w-10 sm:h-10 ${stat.color}`} /></div>
-              <h3 className="text-xs sm:text-3xl md:text-4xl font-black text-neutral-900 mb-0.5 sm:mb-2">{stat.value}</h3>
-              <p className="text-neutral-600 font-bold uppercase tracking-wide text-[9px] sm:text-sm">{stat.label}</p>
+              <div className="inline-flex items-center justify-center w-8 h-8 sm:w-24 sm:h-24 bg-white border-2 border-neutral-200 group-hover:border-primary-300 rounded-2xl sm:rounded-3xl mb-2 sm:mb-5 group-hover:scale-110 transition-all duration-300 shadow-xl group-hover:shadow-2xl"><stat.icon className={`w-4 h-4 sm:w-12 sm:h-12 ${stat.color}`} /></div>
+              <h3 className="text-sm sm:text-4xl md:text-5xl font-black text-neutral-900 mb-1 sm:mb-3">{stat.value}</h3>
+              <p className="text-neutral-600 font-bold uppercase tracking-wide text-[11px] sm:text-base">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>

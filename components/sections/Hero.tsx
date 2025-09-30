@@ -84,7 +84,7 @@ export const Hero = () => {
   </motion.div>
   <motion.h1 className="text-2xl xs:text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-display font-black text-neutral-900 mb-2 sm:mb-6 leading-[1.1] sm:leading-[0.85] tracking-tight" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}>
           <span className="block relative">
-            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">Dr.Mugil vanan</span><span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black  lg:text-6xl"> ,PT,MBA</span>
+            <span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black">Dr.Mugil vanan</span><span className="bg-gradient-to-r from-[#739EC9] via-neutral-400 to-[#739EC9] bg-clip-text text-transparent font-black  lg:text-4xl"> ,PT,MBA</span>
       <motion.div className="absolute -top-1 -right-2 w-4 h-4 sm:w-7 sm:h-7 bg-accent-pink-500 rounded-full" animate={{ scale: [1, 1.2, 1] }} transition={{ duration: 2, repeat: Infinity }} />
           </span>
         </motion.h1>
